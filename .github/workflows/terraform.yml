@@ -68,7 +68,7 @@ jobs:
 
       - name: "Terraform plan"
         run: |
-          terraform plan -destroy -var="do_token=${{ secrets.API_DO }}" -input=false -out=tfplan
+          terraform plan -destroy -var="do_token=${{ secrets.DAVTROTOKEN_APP_DO }}" -input=false -out=tfplan
 
       - name: "Upload plan"
         uses: actions/upload-artifact@v4
