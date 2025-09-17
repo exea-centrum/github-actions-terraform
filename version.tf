@@ -9,7 +9,7 @@ terraform {
   }
 
   cloud {
-    organization = "test_github_actions"
+    organization = "davtro"
 
     workspaces {
       name = "github-actions-terraform"
